@@ -6,12 +6,12 @@ export function Landing() {
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100">
       <Navbar />
 
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 lg:pt-16 pb-12 sm:pb-16 lg:pb-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div className="opacity-0 animate-slide-up">
-            <h1 className="font-display text-2xl sm:text-4xl lg:text-5xl font-bold text-slate-800 dark:text-slate-100 tracking-tight mb-3 sm:mb-4 leading-tight">
-              <span className="md:hidden">Predict Health Insurance Claim Costs with AI Precision</span>
-              <span className="hidden md:inline"><LineBreakLabel text="Predict Health Insurance Claim Costs with AI Precision" /></span>
+      <section className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8 pt-6 sm:pt-12 lg:pt-16 pb-10 sm:pb-16 lg:pb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+          <div className="opacity-0 animate-slide-up order-1">
+            <h1 className="font-display text-xl sm:text-3xl lg:text-5xl font-bold text-slate-800 dark:text-slate-100 tracking-tight mb-3 sm:mb-4 leading-snug sm:leading-tight">
+              <span className="lg:hidden">Predict Health Insurance Claim Costs with AI Precision</span>
+              <span className="hidden lg:inline"><LineBreakLabel text="Predict Health Insurance Claim Costs with AI Precision" /></span>
             </h1>
             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 mb-4 sm:mb-6">
               Data-driven insights for insurers and analysts — simulate, clean, and model claim risk in one place.
@@ -31,11 +31,11 @@ export function Landing() {
               </li>
             </ul>
           </div>
-          <div className="relative rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-xl opacity-0 animate-scale-in" style={{ animationDelay: '0.12s', animationFillMode: 'forwards' }}>
+          <div className="relative rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-xl opacity-0 animate-scale-in order-2 lg:order-none max-h-[220px] sm:max-h-[280px] lg:max-h-none" style={{ animationDelay: '0.12s', animationFillMode: 'forwards' }}>
             <img
               src={`${import.meta.env.BASE_URL}hero-dashboard.png`}
               alt="Healthcare analytics dashboard with charts and metrics"
-              className="w-full h-auto object-cover transition-transform duration-500 hover:scale-[1.02]"
+              className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-[1.02]"
             />
           </div>
         </div>
@@ -46,15 +46,15 @@ export function Landing() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 text-center">
             <div className="opacity-0 animate-slide-up" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
               <p className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-sky-600 dark:text-sky-400">10K+</p>
-              <p className="text-sm text-slate-600 dark:text-slate-400 mt-1 leading-tight"><LineBreakLabel text="Records per dataset" /></p>
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1 leading-tight"><span className="sm:hidden">Records per dataset</span><span className="hidden sm:inline"><LineBreakLabel text="Records per dataset" /></span></p>
             </div>
             <div className="opacity-0 animate-slide-up" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
               <p className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-sky-600 dark:text-sky-400">100%</p>
-              <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">In-browser</p>
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1">In-browser</p>
             </div>
             <div className="opacity-0 animate-slide-up" style={{ animationDelay: '0.15s', animationFillMode: 'forwards' }}>
               <p className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-sky-600 dark:text-sky-400">Free</p>
-              <p className="text-sm text-slate-600 dark:text-slate-400 mt-1 leading-tight"><LineBreakLabel text="To use" /></p>
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1 leading-tight"><span className="sm:hidden">To use</span><span className="hidden sm:inline"><LineBreakLabel text="To use" /></span></p>
             </div>
           </div>
         </div>
