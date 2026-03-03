@@ -31,7 +31,7 @@ export function Landing() {
           </div>
           <div className="relative rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-xl opacity-0 animate-scale-in" style={{ animationDelay: '0.12s', animationFillMode: 'forwards' }}>
             <img
-              src="/hero-dashboard.png"
+              src={`${import.meta.env.BASE_URL}hero-dashboard.png`}
               alt="Healthcare analytics dashboard with charts and metrics"
               className="w-full h-auto object-cover transition-transform duration-500 hover:scale-[1.02]"
             />
@@ -121,7 +121,7 @@ export function Landing() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-lg opacity-0 animate-slide-up" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
               <img
-                src="/health-analytics.png"
+                src={`${import.meta.env.BASE_URL}health-analytics.png`}
                 alt="Data-driven healthcare analytics and metrics"
                 className="w-full h-auto object-cover transition-transform duration-500 hover:scale-[1.02]"
               />
@@ -191,7 +191,7 @@ export function Landing() {
             </div>
             <div className="relative rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-lg opacity-0 animate-scale-in transition-transform duration-500 hover:scale-[1.01]" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
               <img
-                src="/ai-health.png"
+                src={`${import.meta.env.BASE_URL}ai-health.png`}
                 alt="AI and secure healthcare data visualization"
                 className="w-full h-auto object-cover"
               />
@@ -264,7 +264,7 @@ export function Landing() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-lg order-2 lg:order-1 opacity-0 animate-scale-in transition-transform duration-500 hover:scale-[1.01]" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
               <img
-                src="/dashboard-workspace.png"
+                src={`${import.meta.env.BASE_URL}dashboard-workspace.png`}
                 alt="Analytics workspace with health data dashboards"
                 className="w-full h-auto object-cover"
               />

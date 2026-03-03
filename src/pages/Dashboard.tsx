@@ -17,7 +17,7 @@ export function Dashboard() {
 
       <div className="rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-md mb-8 opacity-0 animate-slide-up bg-slate-100 dark:bg-slate-800/50" style={{ animationDelay: '0.06s', animationFillMode: 'forwards' }}>
         <img
-          src="/dashboard-workspace.png"
+          src={`${import.meta.env.BASE_URL}dashboard-workspace.png`}
           alt="Analytics workspace with health claim data and dashboards"
           className="w-full h-40 sm:h-48 md:h-56 object-cover object-top"
         />
