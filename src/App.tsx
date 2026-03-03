@@ -39,7 +39,7 @@ function App() {
     <ErrorBoundary>
       <AuthProvider>
         <AppStateProvider>
-          <BrowserRouter>
+          <BrowserRouter basename="/Health-care">
             <Suspense fallback={<PageFallback />}>
               <Routes>
                 {/* Starting page: landing at root */}
