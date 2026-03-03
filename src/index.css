@@ -18,11 +18,16 @@
   --color-border: #334155;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'DM Sans', system-ui, sans-serif;
   background: var(--color-bg);
   color: var(--color-text);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* Keyframes for entrance and UI animations */

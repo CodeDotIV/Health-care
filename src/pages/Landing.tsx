@@ -6,16 +6,17 @@ export function Landing() {
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100">
       <Navbar />
 
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 lg:pt-16 pb-12 sm:pb-16 lg:pb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="opacity-0 animate-slide-up">
-            <h1 className="font-display text-4xl sm:text-5xl font-bold text-slate-800 dark:text-slate-100 tracking-tight mb-4 leading-tight">
-              <LineBreakLabel text="Predict Health Insurance Claim Costs with AI Precision" />
+            <h1 className="font-display text-2xl sm:text-4xl lg:text-5xl font-bold text-slate-800 dark:text-slate-100 tracking-tight mb-3 sm:mb-4 leading-tight">
+              <span className="md:hidden">Predict Health Insurance Claim Costs with AI Precision</span>
+              <span className="hidden md:inline"><LineBreakLabel text="Predict Health Insurance Claim Costs with AI Precision" /></span>
             </h1>
-            <p className="text-lg text-slate-600 dark:text-slate-400 mb-6">
+            <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 mb-4 sm:mb-6">
               Data-driven insights for insurers and analysts — simulate, clean, and model claim risk in one place.
             </p>
-            <ul className="space-y-3 text-slate-600 dark:text-slate-400">
+            <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base text-slate-600 dark:text-slate-400">
               <li className="flex items-start gap-2">
                 <span className="text-sky-500 mt-0.5">•</span>
                 <span>Generate and validate synthetic health claim datasets</span>
@@ -40,19 +41,19 @@ export function Landing() {
         </div>
       </section>
 
-      <section className="border-t border-slate-200 dark:border-slate-700 bg-sky-50/50 dark:bg-sky-900/10 py-16">
+      <section className="border-t border-slate-200 dark:border-slate-700 bg-sky-50/50 dark:bg-sky-900/10 py-10 sm:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 text-center">
             <div className="opacity-0 animate-slide-up" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
-              <p className="font-display text-3xl sm:text-4xl font-bold text-sky-600 dark:text-sky-400">10K+</p>
+              <p className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-sky-600 dark:text-sky-400">10K+</p>
               <p className="text-sm text-slate-600 dark:text-slate-400 mt-1 leading-tight"><LineBreakLabel text="Records per dataset" /></p>
             </div>
             <div className="opacity-0 animate-slide-up" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
-              <p className="font-display text-3xl sm:text-4xl font-bold text-sky-600 dark:text-sky-400">100%</p>
+              <p className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-sky-600 dark:text-sky-400">100%</p>
               <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">In-browser</p>
             </div>
             <div className="opacity-0 animate-slide-up" style={{ animationDelay: '0.15s', animationFillMode: 'forwards' }}>
-              <p className="font-display text-3xl sm:text-4xl font-bold text-sky-600 dark:text-sky-400">Free</p>
+              <p className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-sky-600 dark:text-sky-400">Free</p>
               <p className="text-sm text-slate-600 dark:text-slate-400 mt-1 leading-tight"><LineBreakLabel text="To use" /></p>
             </div>
           </div>
@@ -61,19 +62,19 @@ export function Landing() {
 
       <section
         id="features"
-        className="border-t border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 py-16"
+        className="border-t border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 py-10 sm:py-16"
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-bold text-center text-slate-800 dark:text-slate-100 mb-4 leading-tight">
+          <h2 className="font-display text-2xl sm:text-3xl font-bold text-center text-slate-800 dark:text-slate-100 mb-3 sm:mb-4 leading-tight">
             <LineBreakLabel text="Features" />
           </h2>
-          <p className="text-center text-slate-600 dark:text-slate-400 mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-sm sm:text-base text-slate-600 dark:text-slate-400 mb-8 sm:mb-12 max-w-2xl mx-auto px-1">
             Everything you need to go from raw data to actionable claim predictions — no servers, no setup.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="card-surface p-6 rounded-xl opacity-0 animate-slide-up transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
-              <div className="text-3xl mb-3">📊</div>
-              <h3 className="font-display text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2 leading-tight">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <div className="card-surface p-4 sm:p-6 rounded-xl opacity-0 animate-slide-up transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
+              <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">📊</div>
+              <h3 className="font-display text-base sm:text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2 leading-tight">
                 <LineBreakLabel text="Synthetic Data Generator" />
               </h3>
               <p className="text-slate-600 dark:text-slate-400 text-sm mb-3">
@@ -85,9 +86,9 @@ export function Landing() {
                 <li>• Export to CSV</li>
               </ul>
             </div>
-            <div className="card-surface p-6 rounded-xl opacity-0 animate-slide-up transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style={{ animationDelay: '0.12s', animationFillMode: 'forwards' }}>
-              <div className="text-3xl mb-3">🧹</div>
-              <h3 className="font-display text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2 leading-tight">
+            <div className="card-surface p-4 sm:p-6 rounded-xl opacity-0 animate-slide-up transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style={{ animationDelay: '0.12s', animationFillMode: 'forwards' }}>
+              <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">🧹</div>
+              <h3 className="font-display text-base sm:text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2 leading-tight">
                 <LineBreakLabel text="Clean & Validate" />
               </h3>
               <p className="text-slate-600 dark:text-slate-400 text-sm mb-3">
@@ -99,9 +100,9 @@ export function Landing() {
                 <li>• Optional normalization</li>
               </ul>
             </div>
-            <div className="card-surface p-6 rounded-xl opacity-0 animate-slide-up transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style={{ animationDelay: '0.19s', animationFillMode: 'forwards' }}>
-              <div className="text-3xl mb-3">📈</div>
-              <h3 className="font-display text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2 leading-tight">
+            <div className="card-surface p-4 sm:p-6 rounded-xl opacity-0 animate-slide-up transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style={{ animationDelay: '0.19s', animationFillMode: 'forwards' }}>
+              <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">📈</div>
+              <h3 className="font-display text-base sm:text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2 leading-tight">
                 <LineBreakLabel text="Regression & Insights" />
               </h3>
               <p className="text-slate-600 dark:text-slate-400 text-sm mb-3">
@@ -117,9 +118,9 @@ export function Landing() {
         </div>
       </section>
 
-      <section className="border-t border-slate-200 dark:border-slate-700 py-16">
+      <section className="border-t border-slate-200 dark:border-slate-700 py-10 sm:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="relative rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-lg opacity-0 animate-slide-up" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
               <img
                 src={`${import.meta.env.BASE_URL}health-analytics.png`}
@@ -128,14 +129,14 @@ export function Landing() {
               />
             </div>
             <div className="opacity-0 animate-slide-up" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
-              <h2 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-4 leading-tight">
+              <h2 className="font-display text-2xl sm:text-3xl font-bold text-slate-800 dark:text-slate-100 mb-3 sm:mb-4 leading-tight">
                 <LineBreakLabel text="Built for" />
               </h2>
-              <p className="text-slate-600 dark:text-slate-400 mb-6">
+              <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 mb-4 sm:mb-6">
                 From underwriting to research — one platform for data, models, and predictions.
               </p>
-              <ul className="space-y-4">
-                <li className="card-surface p-4 rounded-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
+              <ul className="space-y-3 sm:space-y-4">
+                <li className="card-surface p-3 sm:p-4 rounded-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
                   <h3 className="font-display font-semibold text-slate-800 dark:text-slate-100 mb-1 leading-tight"><LineBreakLabel text="Insurers & underwriters" /></h3>
                   <p className="text-slate-600 dark:text-slate-400 text-sm mb-2">Simulate claim costs and risk segments without sending data outside your environment.</p>
                   <ul className="text-slate-500 dark:text-slate-500 text-sm space-y-0.5">
@@ -143,7 +144,7 @@ export function Landing() {
                     <li>• Policy and scenario exploration</li>
                   </ul>
                 </li>
-                <li className="card-surface p-4 rounded-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
+                <li className="card-surface p-3 sm:p-4 rounded-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
                   <h3 className="font-display font-semibold text-slate-800 dark:text-slate-100 mb-1 leading-tight"><LineBreakLabel text="Data analysts" /></h3>
                   <p className="text-slate-600 dark:text-slate-400 text-sm mb-2">Explore regression, feature importance, and evaluation metrics in a single workflow.</p>
                   <ul className="text-slate-500 dark:text-slate-500 text-sm space-y-0.5">
@@ -151,7 +152,7 @@ export function Landing() {
                     <li>• Actual vs predicted and residual plots</li>
                   </ul>
                 </li>
-                <li className="card-surface p-4 rounded-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
+                <li className="card-surface p-3 sm:p-4 rounded-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
                   <h3 className="font-display font-semibold text-slate-800 dark:text-slate-100 mb-1 leading-tight"><LineBreakLabel text="Students & educators" /></h3>
                   <p className="text-slate-600 dark:text-slate-400 text-sm mb-2">Learn ML concepts end-to-end with synthetic data and no setup.</p>
                   <ul className="text-slate-500 dark:text-slate-500 text-sm space-y-0.5">
@@ -165,14 +166,14 @@ export function Landing() {
         </div>
       </section>
 
-      <section className="border-t border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 py-16">
+      <section className="border-t border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 py-10 sm:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="opacity-0 animate-slide-up" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
-              <h2 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-4 leading-tight">
+              <h2 className="font-display text-2xl sm:text-3xl font-bold text-slate-800 dark:text-slate-100 mb-3 sm:mb-4 leading-tight">
                 <LineBreakLabel text="AI-powered, data-secure" />
               </h2>
-              <p className="text-slate-600 dark:text-slate-400 mb-6">
+              <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 mb-4 sm:mb-6">
                 Regression and analytics run locally — your data never leaves your device.
               </p>
               <ul className="space-y-2 text-slate-600 dark:text-slate-400">
@@ -203,16 +204,16 @@ export function Landing() {
 
       <section
         id="pricing"
-        className="border-t border-slate-200 dark:border-slate-700 py-16"
+        className="border-t border-slate-200 dark:border-slate-700 py-10 sm:py-16"
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-bold text-center text-slate-800 dark:text-slate-100 mb-4 leading-tight">
+          <h2 className="font-display text-2xl sm:text-3xl font-bold text-center text-slate-800 dark:text-slate-100 mb-3 sm:mb-4 leading-tight">
             <LineBreakLabel text="Pricing" />
           </h2>
-          <p className="text-center text-slate-600 dark:text-slate-400 mb-8 max-w-xl mx-auto">
+          <p className="text-center text-sm sm:text-base text-slate-600 dark:text-slate-400 mb-6 sm:mb-8 max-w-xl mx-auto px-1">
             No tiers, no credit card. Full access to the pipeline from day one.
           </p>
-          <div className="max-w-lg mx-auto card-surface p-8 rounded-2xl opacity-0 animate-scale-in transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
+          <div className="max-w-lg mx-auto card-surface p-6 sm:p-8 rounded-2xl opacity-0 animate-scale-in transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
             <p className="text-sky-600 dark:text-sky-400 font-semibold text-lg mb-3 text-center leading-tight"><LineBreakLabel text="Free to use" /></p>
             <p className="text-slate-600 dark:text-slate-400 text-sm mb-4 text-center">
               Full access to dataset generation, cleaning, model training, and prediction — 100% in-browser.
@@ -226,15 +227,15 @@ export function Landing() {
         </div>
       </section>
 
-      <section className="border-t border-slate-200 dark:border-slate-700 py-16">
+      <section className="border-t border-slate-200 dark:border-slate-700 py-10 sm:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-bold text-center text-slate-800 dark:text-slate-100 mb-4 leading-tight">
+          <h2 className="font-display text-2xl sm:text-3xl font-bold text-center text-slate-800 dark:text-slate-100 mb-3 sm:mb-4 leading-tight">
             <LineBreakLabel text="What people say" />
           </h2>
-          <p className="text-center text-slate-600 dark:text-slate-400 mb-12 max-w-xl mx-auto">
+          <p className="text-center text-sm sm:text-base text-slate-600 dark:text-slate-400 mb-8 sm:mb-12 max-w-xl mx-auto px-1">
             Teams use the platform for demos, teaching, and quick claim-cost experiments.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             <blockquote className="card-surface p-6 rounded-xl opacity-0 animate-slide-up transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
               <p className="text-slate-600 dark:text-slate-400 text-sm italic mb-4">
                 &ldquo;Finally a way to demo claim prediction without touching production data.&rdquo;
@@ -259,10 +260,10 @@ export function Landing() {
 
       <section
         id="about"
-        className="border-t border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 py-16"
+        className="border-t border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 py-10 sm:py-16"
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="relative rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-lg order-2 lg:order-1 opacity-0 animate-scale-in transition-transform duration-500 hover:scale-[1.01]" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
               <img
                 src={`${import.meta.env.BASE_URL}dashboard-workspace.png`}
@@ -271,10 +272,10 @@ export function Landing() {
               />
             </div>
             <div className="order-1 lg:order-2 opacity-0 animate-slide-up" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
-              <h2 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-4 leading-tight">
+              <h2 className="font-display text-2xl sm:text-3xl font-bold text-slate-800 dark:text-slate-100 mb-3 sm:mb-4 leading-tight">
                 <LineBreakLabel text="How It Works" />
               </h2>
-              <p className="text-slate-600 dark:text-slate-400 mb-6">
+              <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 mb-4 sm:mb-6">
                 Five steps from signup to prediction — no DevOps, no data pipeline setup.
               </p>
               <ol className="space-y-4 list-decimal list-inside text-slate-600 dark:text-slate-400">
@@ -289,29 +290,29 @@ export function Landing() {
         </div>
       </section>
 
-      <section className="border-t border-slate-200 dark:border-slate-700 py-16">
+      <section className="border-t border-slate-200 dark:border-slate-700 py-10 sm:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-bold text-center text-slate-800 dark:text-slate-100 mb-4 leading-tight">
+          <h2 className="font-display text-2xl sm:text-3xl font-bold text-center text-slate-800 dark:text-slate-100 mb-3 sm:mb-4 leading-tight">
             <LineBreakLabel text="Frequently asked questions" />
           </h2>
-          <p className="text-center text-slate-600 dark:text-slate-400 mb-12 max-w-xl mx-auto">
+          <p className="text-center text-sm sm:text-base text-slate-600 dark:text-slate-400 mb-8 sm:mb-12 max-w-xl mx-auto px-1">
             Common questions about data, privacy, and how the app works.
           </p>
-          <dl className="max-w-2xl mx-auto space-y-6">
-            <div className="card-surface p-6 rounded-xl opacity-0 animate-slide-up transition-all duration-300 hover:shadow-md" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
-              <dt className="font-semibold text-slate-800 dark:text-slate-100 mb-2">Is my data sent to a server?</dt>
+          <dl className="max-w-2xl mx-auto space-y-4 sm:space-y-6">
+            <div className="card-surface p-4 sm:p-6 rounded-xl opacity-0 animate-slide-up transition-all duration-300 hover:shadow-md" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
+              <dt className="font-semibold text-slate-800 dark:text-slate-100 mb-2 text-sm sm:text-base">Is my data sent to a server?</dt>
               <dd className="text-slate-600 dark:text-slate-400 text-sm">
                 No. Everything runs in your browser. Data stays on your device; we don&apos;t store or transmit it.
               </dd>
             </div>
-            <div className="card-surface p-6 rounded-xl opacity-0 animate-slide-up transition-all duration-300 hover:shadow-md" style={{ animationDelay: '0.12s', animationFillMode: 'forwards' }}>
-              <dt className="font-semibold text-slate-800 dark:text-slate-100 mb-2">Do I need to install anything?</dt>
+            <div className="card-surface p-4 sm:p-6 rounded-xl opacity-0 animate-slide-up transition-all duration-300 hover:shadow-md" style={{ animationDelay: '0.12s', animationFillMode: 'forwards' }}>
+              <dt className="font-semibold text-slate-800 dark:text-slate-100 mb-2 text-sm sm:text-base">Do I need to install anything?</dt>
               <dd className="text-slate-600 dark:text-slate-400 text-sm">
                 No installation. Sign up, log in, and start generating data and training the model in the app.
               </dd>
             </div>
-            <div className="card-surface p-6 rounded-xl opacity-0 animate-slide-up transition-all duration-300 hover:shadow-md" style={{ animationDelay: '0.19s', animationFillMode: 'forwards' }}>
-              <dt className="font-semibold text-slate-800 dark:text-slate-100 mb-2">Can I export my results?</dt>
+            <div className="card-surface p-4 sm:p-6 rounded-xl opacity-0 animate-slide-up transition-all duration-300 hover:shadow-md" style={{ animationDelay: '0.19s', animationFillMode: 'forwards' }}>
+              <dt className="font-semibold text-slate-800 dark:text-slate-100 mb-2 text-sm sm:text-base">Can I export my results?</dt>
               <dd className="text-slate-600 dark:text-slate-400 text-sm">
                 Yes. Export datasets to CSV and download prediction or evaluation reports as PDF.
               </dd>
@@ -320,9 +321,9 @@ export function Landing() {
         </div>
       </section>
 
-      <footer className="border-t border-slate-200 dark:border-slate-700 py-8 transition-colors duration-200">
+      <footer className="border-t border-slate-200 dark:border-slate-700 py-6 sm:py-8 transition-colors duration-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-slate-500 dark:text-slate-400 text-sm leading-tight">
+          <p className="text-slate-500 dark:text-slate-400 text-xs sm:text-sm leading-tight px-1">
             © {new Date().getFullYear()} <LineBreakLabel text="Health Claim Predictor" />. All rights reserved.
           </p>
         </div>

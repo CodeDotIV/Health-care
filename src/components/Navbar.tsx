@@ -13,16 +13,17 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 dark:border-slate-700 bg-white/95 dark:bg-slate-900/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 transition-colors duration-200">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-14 sm:h-16 gap-2 min-w-0">
           <Link
             to="/"
-            className="font-display font-bold text-xl text-sky-600 dark:text-sky-400 transition-opacity hover:opacity-90 duration-200 leading-tight"
+            className="font-display font-bold text-base sm:text-xl text-sky-600 dark:text-sky-400 transition-opacity hover:opacity-90 duration-200 leading-tight shrink-0 min-w-0"
           >
-            <LineBreakLabel text="Health Claim Predictor" />
+            <span className="md:hidden">Health Claim Predictor</span>
+            <span className="hidden md:inline"><LineBreakLabel text="Health Claim Predictor" /></span>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden md:flex items-center gap-1 shrink-0">
             {NAV_LINKS.map(({ to, label }) => (
               <a
                 key={to}
@@ -46,12 +47,12 @@ export function Navbar() {
             </Link>
           </nav>
 
-          <div className="flex md:hidden items-center gap-2">
+          <div className="flex md:hidden items-center gap-1.5 shrink-0">
             <Link
               to="/signup"
-              className="btn-primary px-3 py-2 rounded-lg text-sm transition-transform duration-200 active:scale-[0.98] leading-tight"
+              className="btn-primary px-3 py-2 rounded-lg text-xs sm:text-sm transition-transform duration-200 active:scale-[0.98] leading-tight whitespace-nowrap"
             >
-              <LineBreakLabel text="Get Started" />
+              Get Started
             </Link>
             <button
               type="button"

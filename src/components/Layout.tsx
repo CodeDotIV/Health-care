@@ -34,12 +34,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
     <div className={state.darkMode ? 'dark' : ''}>
       <div className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100">
         <header className="border-b border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 shadow-sm sticky top-0 z-10 transition-colors duration-200">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between h-14">
-              <Link to="/dashboard" className="font-display font-bold text-xl text-sky-600 dark:text-sky-400 transition-opacity hover:opacity-90 duration-200 leading-tight">
-                <LineBreakLabel text="Health Claim Predictor" />
+          <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+            <div className="flex items-center justify-between h-14 gap-2 min-w-0">
+              <Link to="/dashboard" className="font-display font-bold text-base sm:text-xl text-sky-600 dark:text-sky-400 transition-opacity hover:opacity-90 duration-200 leading-tight shrink-0 min-w-0 truncate">
+                <span className="md:hidden">Health Claim Predictor</span>
+                <span className="hidden md:inline"><LineBreakLabel text="Health Claim Predictor" /></span>
               </Link>
-              <nav className="hidden md:flex items-center gap-1">
+              <nav className="hidden md:flex items-center gap-1 shrink-0">
                 {NAV.map(({ path, label }) => (
                   <Link
                     key={path}
@@ -115,7 +116,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             )}
           </div>
         </header>
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-in">
+        <main className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-8 animate-fade-in overflow-x-hidden">
           {children}
         </main>
       </div>
