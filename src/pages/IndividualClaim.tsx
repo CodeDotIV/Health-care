@@ -7,7 +7,6 @@ import { calculateClaimCost } from '../utils/claimCostFormula';
 import { predictSingle } from '../services/modelService';
 import { downloadPredictionReport } from '../utils/pdfReport';
 import { EmptyState } from '../components/EmptyState';
-import { LineBreakLabel } from '../components/LineBreakLabel';
 
 const defaultRecord: Partial<ClaimRecord> = {
   age: 35,
@@ -126,7 +125,7 @@ export function IndividualClaim() {
   return (
     <div className="opacity-0 animate-slide-up" style={{ animationFillMode: 'forwards' }}>
       <h1 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2">
-        <LineBreakLabel text="Individual Claim Prediction" />
+        Individual Claim Prediction
       </h1>
       <p className="text-slate-600 dark:text-slate-400 mb-6">
         Enter claim details to get predicted cost and risk category. Optional: train a model for ML-based prediction.

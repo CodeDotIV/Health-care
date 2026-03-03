@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { useAppState } from '../hooks/useAppState';
-import { LineBreakLabel } from '../components/LineBreakLabel';
 
 export function Dashboard() {
   const { state } = useAppState();
@@ -9,8 +8,8 @@ export function Dashboard() {
 
   return (
     <div>
-      <h1 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2 opacity-0 animate-slide-up leading-tight" style={{ animationFillMode: 'forwards' }}>
-        <LineBreakLabel text="Dashboard" />
+      <h1 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2 opacity-0 animate-slide-up" style={{ animationFillMode: 'forwards' }}>
+        Dashboard
       </h1>
       <p className="text-slate-600 dark:text-slate-400 mb-8 opacity-0 animate-slide-up" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
         Health Claim Cost Prediction — generate data, clean, train, and evaluate.

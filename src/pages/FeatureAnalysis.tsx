@@ -14,7 +14,6 @@ import {
   getLowestImpactVariable,
 } from '../utils/featureImportance';
 import { EmptyState } from '../components/EmptyState';
-import { LineBreakLabel } from '../components/LineBreakLabel';
 
 export function FeatureAnalysis() {
   const { state, runFeatureAnalysis } = useAppState();
@@ -30,7 +29,7 @@ export function FeatureAnalysis() {
     return (
       <div className="opacity-0 animate-slide-up" style={{ animationFillMode: 'forwards' }}>
         <h1 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2">
-          <LineBreakLabel text="Feature Analysis" />
+          Feature Analysis
         </h1>
         <p className="text-slate-600 dark:text-slate-400 mb-6">
           Correlation matrix and feature importance (cost drivers).
@@ -55,7 +54,7 @@ export function FeatureAnalysis() {
   return (
     <div className="opacity-0 animate-slide-up" style={{ animationFillMode: 'forwards' }}>
       <h1 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2">
-        <LineBreakLabel text="Feature Analysis" />
+        Feature Analysis
       </h1>
       <p className="text-slate-600 dark:text-slate-400 mb-6">
         Correlation matrix, feature importance bar chart, highest cost driver, lowest impact.

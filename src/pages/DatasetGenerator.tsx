@@ -4,7 +4,6 @@ import { useAppState } from '../hooks/useAppState';
 import { exportToCSV } from '../utils/csvExport';
 import { LoadingSpinner } from '../components/LoadingSpinner';
 import { EmptyState } from '../components/EmptyState';
-import { LineBreakLabel } from '../components/LineBreakLabel';
 
 const MAX_GENERATE = 10_000;
 
@@ -48,7 +47,7 @@ export function DatasetGenerator() {
   return (
     <div className="opacity-0 animate-slide-up" style={{ animationFillMode: 'forwards' }}>
       <h1 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2">
-        <LineBreakLabel text="Dataset Generator" />
+        Dataset Generator
       </h1>
       <p className="text-slate-600 dark:text-slate-400 mb-6">
         Generate synthetic health insurance claim data (age, BMI, smoker, region, etc.) with auto-calculated claim cost.

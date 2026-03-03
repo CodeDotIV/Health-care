@@ -18,20 +18,11 @@
   --color-border: #334155;
 }
 
-html {
-  overflow-x: hidden;
-  -webkit-text-size-adjust: 100%;
-}
-
 body {
   font-family: 'DM Sans', system-ui, sans-serif;
   background: var(--color-bg);
   color: var(--color-text);
   min-height: 100vh;
-  min-height: 100dvh;
-  overflow-x: hidden;
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
 }
 
 /* Keyframes for entrance and UI animations */

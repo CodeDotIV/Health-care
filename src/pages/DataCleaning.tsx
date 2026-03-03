@@ -2,7 +2,6 @@ import { useCallback } from 'react';
 import { useAppState } from '../hooks/useAppState';
 import { exportToCSV } from '../utils/csvExport';
 import { EmptyState } from '../components/EmptyState';
-import { LineBreakLabel } from '../components/LineBreakLabel';
 
 export function DataCleaning() {
   const { state, setRawData, runCleaning } = useAppState();
@@ -30,7 +29,7 @@ export function DataCleaning() {
     return (
       <div className="opacity-0 animate-slide-up" style={{ animationFillMode: 'forwards' }}>
         <h1 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2">
-          <LineBreakLabel text="Data Cleaning" />
+          Data Cleaning
         </h1>
         <p className="text-slate-600 dark:text-slate-400 mb-6">
           Validation (age 18–85, BMI 10–60, no nulls), remove duplicates and outliers.
@@ -46,7 +45,7 @@ export function DataCleaning() {
   return (
     <div className="opacity-0 animate-slide-up" style={{ animationFillMode: 'forwards' }}>
       <h1 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2">
-        <LineBreakLabel text="Data Cleaning" />
+        Data Cleaning
       </h1>
       <p className="text-slate-600 dark:text-slate-400 mb-6">
         Remove duplicates, invalid rows, and outliers (claim_cost &gt; 5 crore). Max 10,000 rows.
