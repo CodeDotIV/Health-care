@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useAppState } from '../hooks/useAppState';
 import { useAuth } from '../context/AuthContext';
+import { LineBreakLabel } from './LineBreakLabel';
 
 const NAV = [
   { path: '/dashboard', label: 'Dashboard' },
@@ -35,21 +36,21 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <header className="border-b border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 shadow-sm sticky top-0 z-10 transition-colors duration-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-14">
-              <Link to="/dashboard" className="font-display font-bold text-xl text-sky-600 dark:text-sky-400 transition-opacity hover:opacity-90 duration-200">
-                Health Claim Predictor
+              <Link to="/dashboard" className="font-display font-bold text-xl text-sky-600 dark:text-sky-400 transition-opacity hover:opacity-90 duration-200 leading-tight">
+                <LineBreakLabel text="Health Claim Predictor" />
               </Link>
               <nav className="hidden md:flex items-center gap-1">
                 {NAV.map(({ path, label }) => (
                   <Link
                     key={path}
                     to={path}
-                    className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${
+                    className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 leading-tight ${
                       location.pathname === path
                         ? 'bg-sky-100 dark:bg-sky-900/30 text-sky-700 dark:text-sky-300'
                         : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-slate-200'
                     }`}
                   >
-                    {label}
+                    <LineBreakLabel text={label} />
                   </Link>
                 ))}
                 <div className="ml-2 flex items-center gap-2">
@@ -98,9 +99,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     key={path}
                     to={path}
                     onClick={() => setMenuOpen(false)}
-                    className="px-3 py-2 rounded-lg text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors duration-200"
+                    className="px-3 py-2 rounded-lg text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors duration-200 leading-tight"
                   >
-                    {label}
+                    <LineBreakLabel text={label} />
                   </Link>
                 ))}
                 <button

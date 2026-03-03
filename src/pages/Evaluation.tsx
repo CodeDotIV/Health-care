@@ -15,6 +15,7 @@ import { useAppState } from '../hooks/useAppState';
 import { getRiskCategory } from '../models/claim';
 import { downloadEvaluationReport } from '../utils/pdfReport';
 import { EmptyState } from '../components/EmptyState';
+import { LineBreakLabel } from '../components/LineBreakLabel';
 
 export function Evaluation() {
   const { state } = useAppState();
@@ -25,7 +26,7 @@ export function Evaluation() {
     return (
       <div className="opacity-0 animate-slide-up" style={{ animationFillMode: 'forwards' }}>
         <h1 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2">
-          Model Evaluation
+          <LineBreakLabel text="Model Evaluation" />
         </h1>
         <p className="text-slate-600 dark:text-slate-400 mb-6">
           Actual vs predicted, residuals, error distribution, risk buckets.
@@ -72,7 +73,7 @@ export function Evaluation() {
   return (
     <div className="opacity-0 animate-slide-up" style={{ animationFillMode: 'forwards' }}>
       <h1 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2">
-        Model Evaluation
+        <LineBreakLabel text="Model Evaluation" />
       </h1>
       <p className="text-slate-600 dark:text-slate-400 mb-6">
         Actual vs predicted, residuals, error distribution, risk categorization.

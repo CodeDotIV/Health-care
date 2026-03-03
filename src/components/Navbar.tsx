@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { LineBreakLabel } from './LineBreakLabel';
 
 const NAV_LINKS = [
   { to: '#features', label: 'Features' },
@@ -16,9 +17,9 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link
             to="/"
-            className="font-display font-bold text-xl text-sky-600 dark:text-sky-400 transition-opacity hover:opacity-90 duration-200"
+            className="font-display font-bold text-xl text-sky-600 dark:text-sky-400 transition-opacity hover:opacity-90 duration-200 leading-tight"
           >
-            Health Claim Predictor
+            <LineBreakLabel text="Health Claim Predictor" />
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">
@@ -26,31 +27,31 @@ export function Navbar() {
               <a
                 key={to}
                 href={to}
-                className="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-slate-200 transition-colors duration-200"
+                className="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-slate-200 transition-colors duration-200 leading-tight"
               >
-                {label}
+                <LineBreakLabel text={label} />
               </a>
             ))}
             <Link
               to="/login"
-              className="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200"
+              className="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200 leading-tight"
             >
-              Login
+              <LineBreakLabel text="Login" />
             </Link>
             <Link
               to="/signup"
-              className="ml-2 btn-primary inline-block px-4 py-2 rounded-lg text-sm transition-transform duration-200 hover:scale-[1.02]"
+              className="ml-2 btn-primary inline-block px-4 py-2 rounded-lg text-sm transition-transform duration-200 hover:scale-[1.02] leading-tight"
             >
-              Get Started
+              <LineBreakLabel text="Get Started" />
             </Link>
           </nav>
 
           <div className="flex md:hidden items-center gap-2">
             <Link
               to="/signup"
-              className="btn-primary px-3 py-2 rounded-lg text-sm transition-transform duration-200 active:scale-[0.98]"
+              className="btn-primary px-3 py-2 rounded-lg text-sm transition-transform duration-200 active:scale-[0.98] leading-tight"
             >
-              Get Started
+              <LineBreakLabel text="Get Started" />
             </Link>
             <button
               type="button"
@@ -75,19 +76,19 @@ export function Navbar() {
                   key={to}
                   href={to}
                   onClick={() => setOpen(false)}
-                  className="px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200 animate-fade-in"
+                  className="px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200 animate-fade-in leading-tight"
                   style={{ animationDelay: `${i * 0.04}s` }}
                 >
-                  {label}
+                  <LineBreakLabel text={label} />
                 </a>
               ))}
               <Link
                 to="/login"
                 onClick={() => setOpen(false)}
-                className="px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200 animate-fade-in"
+                className="px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200 animate-fade-in leading-tight"
                 style={{ animationDelay: `${NAV_LINKS.length * 0.04}s` }}
               >
-                Login
+                <LineBreakLabel text="Login" />
               </Link>
             </div>
           </div>

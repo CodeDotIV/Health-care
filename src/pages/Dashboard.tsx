@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useAppState } from '../hooks/useAppState';
+import { LineBreakLabel } from '../components/LineBreakLabel';
 
 export function Dashboard() {
   const { state } = useAppState();
@@ -8,20 +9,12 @@ export function Dashboard() {
 
   return (
     <div>
-      <h1 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2 opacity-0 animate-slide-up" style={{ animationFillMode: 'forwards' }}>
-        Dashboard
+      <h1 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2 opacity-0 animate-slide-up leading-tight" style={{ animationFillMode: 'forwards' }}>
+        <LineBreakLabel text="Dashboard" />
       </h1>
-      <p className="text-slate-600 dark:text-slate-400 mb-6 opacity-0 animate-slide-up" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
+      <p className="text-slate-600 dark:text-slate-400 mb-8 opacity-0 animate-slide-up" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
         Health Claim Cost Prediction — generate data, clean, train, and evaluate.
       </p>
-
-      <div className="rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-md mb-8 opacity-0 animate-slide-up bg-slate-100 dark:bg-slate-800/50" style={{ animationDelay: '0.06s', animationFillMode: 'forwards' }}>
-        <img
-          src={`${import.meta.env.BASE_URL}dashboard-workspace.png`}
-          alt="Analytics workspace with health claim data and dashboards"
-          className="w-full h-40 sm:h-48 md:h-56 object-cover object-top"
-        />
-      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
         <div className="card-surface p-4 opacity-0 animate-slide-up transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md" style={{ animationDelay: '0.08s', animationFillMode: 'forwards' }}>

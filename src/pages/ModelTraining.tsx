@@ -2,6 +2,7 @@ import { useCallback, useState } from 'react';
 import { useAppState } from '../hooks/useAppState';
 import { LoadingSpinner } from '../components/LoadingSpinner';
 import { EmptyState } from '../components/EmptyState';
+import { LineBreakLabel } from '../components/LineBreakLabel';
 
 export function ModelTraining() {
   const { state, runTraining } = useAppState();
@@ -23,7 +24,7 @@ export function ModelTraining() {
     return (
       <div className="opacity-0 animate-slide-up" style={{ animationFillMode: 'forwards' }}>
         <h1 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2">
-          Model Training
+          <LineBreakLabel text="Model Training" />
         </h1>
         <p className="text-slate-600 dark:text-slate-400 mb-6">
           Train a linear regression model (80/20 train/test). MSE, RMSE, R².
@@ -39,7 +40,7 @@ export function ModelTraining() {
   return (
     <div className="opacity-0 animate-slide-up" style={{ animationFillMode: 'forwards' }}>
       <h1 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-2">
-        Model Training
+        <LineBreakLabel text="Model Training" />
       </h1>
       <p className="text-slate-600 dark:text-slate-400 mb-6">
         Linear regression on numeric + encoded categorical features. 80% train / 20% test.

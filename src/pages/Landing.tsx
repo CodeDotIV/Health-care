@@ -1,4 +1,5 @@
 import { Navbar } from '../components/Navbar';
+import { LineBreakLabel } from '../components/LineBreakLabel';
 
 export function Landing() {
   return (
@@ -8,8 +9,8 @@ export function Landing() {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="opacity-0 animate-slide-up">
-            <h1 className="font-display text-4xl sm:text-5xl font-bold text-slate-800 dark:text-slate-100 tracking-tight mb-4">
-              Predict Health Insurance Claim Costs with AI Precision
+            <h1 className="font-display text-4xl sm:text-5xl font-bold text-slate-800 dark:text-slate-100 tracking-tight mb-4 leading-tight">
+              <LineBreakLabel text="Predict Health Insurance Claim Costs with AI Precision" />
             </h1>
             <p className="text-lg text-slate-600 dark:text-slate-400 mb-6">
               Data-driven insights for insurers and analysts — simulate, clean, and model claim risk in one place.
@@ -44,7 +45,7 @@ export function Landing() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
             <div className="opacity-0 animate-slide-up" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
               <p className="font-display text-3xl sm:text-4xl font-bold text-sky-600 dark:text-sky-400">10K+</p>
-              <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">Records per dataset</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400 mt-1 leading-tight"><LineBreakLabel text="Records per dataset" /></p>
             </div>
             <div className="opacity-0 animate-slide-up" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
               <p className="font-display text-3xl sm:text-4xl font-bold text-sky-600 dark:text-sky-400">100%</p>
@@ -52,7 +53,7 @@ export function Landing() {
             </div>
             <div className="opacity-0 animate-slide-up" style={{ animationDelay: '0.15s', animationFillMode: 'forwards' }}>
               <p className="font-display text-3xl sm:text-4xl font-bold text-sky-600 dark:text-sky-400">Free</p>
-              <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">To use</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400 mt-1 leading-tight"><LineBreakLabel text="To use" /></p>
             </div>
           </div>
         </div>
@@ -63,8 +64,8 @@ export function Landing() {
         className="border-t border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 py-16"
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-bold text-center text-slate-800 dark:text-slate-100 mb-4">
-            Features
+          <h2 className="font-display text-3xl font-bold text-center text-slate-800 dark:text-slate-100 mb-4 leading-tight">
+            <LineBreakLabel text="Features" />
           </h2>
           <p className="text-center text-slate-600 dark:text-slate-400 mb-12 max-w-2xl mx-auto">
             Everything you need to go from raw data to actionable claim predictions — no servers, no setup.
@@ -72,8 +73,8 @@ export function Landing() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="card-surface p-6 rounded-xl opacity-0 animate-slide-up transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
               <div className="text-3xl mb-3">📊</div>
-              <h3 className="font-display text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2">
-                Synthetic Data Generator
+              <h3 className="font-display text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2 leading-tight">
+                <LineBreakLabel text="Synthetic Data Generator" />
               </h3>
               <p className="text-slate-600 dark:text-slate-400 text-sm mb-3">
                 Generate realistic health insurance datasets with configurable size and strict validation.
@@ -86,8 +87,8 @@ export function Landing() {
             </div>
             <div className="card-surface p-6 rounded-xl opacity-0 animate-slide-up transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style={{ animationDelay: '0.12s', animationFillMode: 'forwards' }}>
               <div className="text-3xl mb-3">🧹</div>
-              <h3 className="font-display text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2">
-                Clean & Validate
+              <h3 className="font-display text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2 leading-tight">
+                <LineBreakLabel text="Clean & Validate" />
               </h3>
               <p className="text-slate-600 dark:text-slate-400 text-sm mb-3">
                 Remove duplicates, handle outliers, and enforce business rules — no backend required.
@@ -100,8 +101,8 @@ export function Landing() {
             </div>
             <div className="card-surface p-6 rounded-xl opacity-0 animate-slide-up transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style={{ animationDelay: '0.19s', animationFillMode: 'forwards' }}>
               <div className="text-3xl mb-3">📈</div>
-              <h3 className="font-display text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2">
-                Regression & Insights
+              <h3 className="font-display text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2 leading-tight">
+                <LineBreakLabel text="Regression & Insights" />
               </h3>
               <p className="text-slate-600 dark:text-slate-400 text-sm mb-3">
                 Train a linear model, view feature importance, and predict claim costs with risk categories.
@@ -127,15 +128,15 @@ export function Landing() {
               />
             </div>
             <div className="opacity-0 animate-slide-up" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
-              <h2 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-4">
-                Built for
+              <h2 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-4 leading-tight">
+                <LineBreakLabel text="Built for" />
               </h2>
               <p className="text-slate-600 dark:text-slate-400 mb-6">
                 From underwriting to research — one platform for data, models, and predictions.
               </p>
               <ul className="space-y-4">
                 <li className="card-surface p-4 rounded-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
-                  <h3 className="font-display font-semibold text-slate-800 dark:text-slate-100 mb-1">Insurers & underwriters</h3>
+                  <h3 className="font-display font-semibold text-slate-800 dark:text-slate-100 mb-1 leading-tight"><LineBreakLabel text="Insurers & underwriters" /></h3>
                   <p className="text-slate-600 dark:text-slate-400 text-sm mb-2">Simulate claim costs and risk segments without sending data outside your environment.</p>
                   <ul className="text-slate-500 dark:text-slate-500 text-sm space-y-0.5">
                     <li>• Risk segmentation (low / medium / high)</li>
@@ -143,7 +144,7 @@ export function Landing() {
                   </ul>
                 </li>
                 <li className="card-surface p-4 rounded-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
-                  <h3 className="font-display font-semibold text-slate-800 dark:text-slate-100 mb-1">Data analysts</h3>
+                  <h3 className="font-display font-semibold text-slate-800 dark:text-slate-100 mb-1 leading-tight"><LineBreakLabel text="Data analysts" /></h3>
                   <p className="text-slate-600 dark:text-slate-400 text-sm mb-2">Explore regression, feature importance, and evaluation metrics in a single workflow.</p>
                   <ul className="text-slate-500 dark:text-slate-500 text-sm space-y-0.5">
                     <li>• Correlation matrix and feature importance</li>
@@ -151,7 +152,7 @@ export function Landing() {
                   </ul>
                 </li>
                 <li className="card-surface p-4 rounded-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
-                  <h3 className="font-display font-semibold text-slate-800 dark:text-slate-100 mb-1">Students & educators</h3>
+                  <h3 className="font-display font-semibold text-slate-800 dark:text-slate-100 mb-1 leading-tight"><LineBreakLabel text="Students & educators" /></h3>
                   <p className="text-slate-600 dark:text-slate-400 text-sm mb-2">Learn ML concepts end-to-end with synthetic data and no setup.</p>
                   <ul className="text-slate-500 dark:text-slate-500 text-sm space-y-0.5">
                     <li>• End-to-end pipeline in the browser</li>
@@ -168,8 +169,8 @@ export function Landing() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="opacity-0 animate-slide-up" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
-              <h2 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-4">
-                AI-powered, data-secure
+              <h2 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-4 leading-tight">
+                <LineBreakLabel text="AI-powered, data-secure" />
               </h2>
               <p className="text-slate-600 dark:text-slate-400 mb-6">
                 Regression and analytics run locally — your data never leaves your device.
@@ -205,14 +206,14 @@ export function Landing() {
         className="border-t border-slate-200 dark:border-slate-700 py-16"
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-bold text-center text-slate-800 dark:text-slate-100 mb-4">
-            Pricing
+          <h2 className="font-display text-3xl font-bold text-center text-slate-800 dark:text-slate-100 mb-4 leading-tight">
+            <LineBreakLabel text="Pricing" />
           </h2>
           <p className="text-center text-slate-600 dark:text-slate-400 mb-8 max-w-xl mx-auto">
             No tiers, no credit card. Full access to the pipeline from day one.
           </p>
           <div className="max-w-lg mx-auto card-surface p-8 rounded-2xl opacity-0 animate-scale-in transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5" style={{ animationDelay: '0.05s', animationFillMode: 'forwards' }}>
-            <p className="text-sky-600 dark:text-sky-400 font-semibold text-lg mb-3 text-center">Free to use</p>
+            <p className="text-sky-600 dark:text-sky-400 font-semibold text-lg mb-3 text-center leading-tight"><LineBreakLabel text="Free to use" /></p>
             <p className="text-slate-600 dark:text-slate-400 text-sm mb-4 text-center">
               Full access to dataset generation, cleaning, model training, and prediction — 100% in-browser.
             </p>
@@ -227,8 +228,8 @@ export function Landing() {
 
       <section className="border-t border-slate-200 dark:border-slate-700 py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-bold text-center text-slate-800 dark:text-slate-100 mb-4">
-            What people say
+          <h2 className="font-display text-3xl font-bold text-center text-slate-800 dark:text-slate-100 mb-4 leading-tight">
+            <LineBreakLabel text="What people say" />
           </h2>
           <p className="text-center text-slate-600 dark:text-slate-400 mb-12 max-w-xl mx-auto">
             Teams use the platform for demos, teaching, and quick claim-cost experiments.
@@ -270,8 +271,8 @@ export function Landing() {
               />
             </div>
             <div className="order-1 lg:order-2 opacity-0 animate-slide-up" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
-              <h2 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-4">
-                How It Works
+              <h2 className="font-display text-3xl font-bold text-slate-800 dark:text-slate-100 mb-4 leading-tight">
+                <LineBreakLabel text="How It Works" />
               </h2>
               <p className="text-slate-600 dark:text-slate-400 mb-6">
                 Five steps from signup to prediction — no DevOps, no data pipeline setup.
@@ -290,8 +291,8 @@ export function Landing() {
 
       <section className="border-t border-slate-200 dark:border-slate-700 py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl font-bold text-center text-slate-800 dark:text-slate-100 mb-4">
-            Frequently asked questions
+          <h2 className="font-display text-3xl font-bold text-center text-slate-800 dark:text-slate-100 mb-4 leading-tight">
+            <LineBreakLabel text="Frequently asked questions" />
           </h2>
           <p className="text-center text-slate-600 dark:text-slate-400 mb-12 max-w-xl mx-auto">
             Common questions about data, privacy, and how the app works.
@@ -321,8 +322,8 @@ export function Landing() {
 
       <footer className="border-t border-slate-200 dark:border-slate-700 py-8 transition-colors duration-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-slate-500 dark:text-slate-400 text-sm">
-            © {new Date().getFullYear()} Health Claim Predictor. All rights reserved.
+          <p className="text-slate-500 dark:text-slate-400 text-sm leading-tight">
+            © {new Date().getFullYear()} <LineBreakLabel text="Health Claim Predictor" />. All rights reserved.
           </p>
         </div>
       </footer>
